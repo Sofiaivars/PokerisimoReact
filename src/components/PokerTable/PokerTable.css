@@ -1,0 +1,61 @@
+.poker-table-container {
+  position: relative;
+  background: linear-gradient(to bottom right, rgba(41, 3, 44, 0.6), rgba(221, 165, 233, 0.8)); 
+  padding: 4rem;
+  border-radius: 5rem;
+  width: 80vw;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  margin: 0 auto;
+  z-index: 1;
+}
+  
+.poker-table {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(48, 26, 53, 0.4);
+  border: 45px solid #b75edaa4;
+  border-radius: 50rem;
+  width: 90%;
+  max-width: 1200px;
+  height: 80%;
+  max-height: 700px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  position: relative; 
+  z-index: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.poker-table-container {
+  outline: 2px solid rgb(165, 54, 159);
+}
+
+.poker-table {
+  outline: 2px solid rgb(216, 148, 210);
+  z-index: 100;
+}
+.contador-container {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.zindex-avatar {
+  z-index: 1000;
+}
+.top-row {
+  display: flex;
+  justify-content: space-between;
+}
