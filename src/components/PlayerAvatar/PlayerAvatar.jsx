@@ -20,11 +20,17 @@ const avatarMap = {
   8: avatar8,
   9: avatar9,
 };
-
-const PlayerAvatar = ({ playerNumber, amount, position }) => {
+const PlayerAvatar = ({ playerNumber, amount, top, left }) => {
   const avatar = avatarMap[playerNumber];
+
+  const style = {
+    top: top,
+    left: left,
+    position: "absolute",
+  };
+
   return (
-    <div className={`player-avatar ${position}`}>
+    <div className="player-avatar" style={style}>
       <img
         src={avatar}
         alt={`Avatar Player ${playerNumber}`}

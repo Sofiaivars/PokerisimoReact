@@ -3,14 +3,16 @@
   background: linear-gradient(to bottom right, rgba(41, 3, 44, 0.6), rgba(221, 165, 233, 0.8)); 
   padding: 4rem;
   border-radius: 5rem;
-  width: 80vw;
-  height: 1000px;
+  width: 85vw;      
+  height: 740px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; 
   margin: 0 auto;
+  margin-top: 1vh;
   z-index: 1;
+  aspect-ratio: 2 / 1;
 }
   
 .poker-table {
@@ -20,15 +22,15 @@
   border: 45px solid #b75edaa4;
   border-radius: 50rem;
   width: 90%;
-  max-width: 1200px;
-  height: 80%;
-  max-height: 700px;
+  max-width: 1100px;
+  height: 75%;
+  max-height: 600px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   position: relative; 
   z-index: 1;
   box-sizing: border-box;
   overflow: hidden;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 
 .poker-table-container {
@@ -37,25 +39,45 @@
 
 .poker-table {
   outline: 2px solid rgb(216, 148, 210);
-  z-index: 100;
-}
-.contador-container {
-  position: absolute;
-  bottom: 10rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  font-size: 24px;
-  margin-top: 20px;
+  
 }
 
-.zindex-avatar {
-  z-index: 1000;
+@media (max-width: 1024px) {
+  .poker-table-container {
+    padding: 2rem;
+    width: 90vw;
+    height: 700px;
+  }
+  .poker-table {
+    width: 85%;
+    height: 70%;
+    max-height: 500px;
+  }
+  .contador-container {
+    bottom: 8rem;
+    font-size: 20px;
+  }
 }
-.top-row {
-  display: flex;
-  justify-content: space-between;
+
+@media (max-width: 768px) {
+  .poker-table-container {
+    aspect-ratio: 3 / 2;
+    padding: 1rem;
+  }
+
+  .poker-table {
+    border-width: 30px;
+  }
+
+  .top-row,
+  .middle-row,
+  .bottom-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contador-container {
+    bottom: 5rem;
+    font-size: 18px;
+  }
 }

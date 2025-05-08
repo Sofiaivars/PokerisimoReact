@@ -1,19 +1,29 @@
-
 .logo-container {
-    position: absolute;
-    top: 2rem;
-    left: 7rem;
-    display: flex;
-    gap: 0.5rem;
+  position: absolute;
+  top: 3vh; 
+  left: 5vw;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.logo {
+  height: 15vw; 
+  max-height: 150px; 
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(208, 170, 218, 0.5)); 
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 50px rgba(207, 183, 207, 0.7)); 
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+      top: 2vh;
+      left: 2vw;
   }
-  
   .logo {
-    height: 200px;
-    width: auto;
-    filter: drop-shadow(0 0 10px rgba(208, 170, 218, 0.5)); 
+      height: 25vw;
+      max-height: 100px;
   }
-  
-  
-  .logo:hover {
-    filter: drop-shadow(0 0 50px rgba(207, 183, 207, 0.7)); 
-  }
+}

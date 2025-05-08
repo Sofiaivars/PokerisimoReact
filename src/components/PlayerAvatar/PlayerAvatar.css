@@ -9,44 +9,50 @@
 }
 
 .avatar-img {
-  width: 100px; 
-  height: 100px;
+  width: 70px; 
+  height: 70px;
   border-radius: 50%;
-  border: 3px solid #e6aedf; 
+  
 }
 
 .player-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  padding: 2%;
 }
 
 .amount-box {
-  background-color: rgba(7, 4, 7, 0.7); 
+  background-color: rgba(7, 4, 7, 0.7);
   border-radius: 12px;
-  padding: 4px 30px;
+  padding: 0px 35px;
   margin-bottom: 8px;
+  height: 24px;
+
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .player-amount {
   color: white;
-  font-weight: bold;
+  font-weight:  bold;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 .player-number-box {
   position: absolute;
   top: -10px;
   right: -10px;
   background-color: rgba(238, 211, 241, 0.795);
-  width: 35px; 
+  width: 30px; 
   aspect-ratio: 1/1; 
   border-radius: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .player-name {
   font-size: 14px;
@@ -55,47 +61,82 @@
 }
 
 .top-left {
-  top: 10rem; 
-  left: 35rem;
+  top: 15%;
+  left: 30%;
 }
 
 .top {
-  top: 5rem;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .top-right {
-  top: 10rem;
-  right: 35rem;
+  top: 15%;
+  right: 30%;
 }
 
 .left-top {
-  top: 20rem;
-  left: 25em;
+  top: 30%;
+  left: 15%;
 }
 
 .left-bottom {
-  bottom: 20rem;
-  left: 25em;
-}
-.right-top {
-  top: 20rem;
-  right: 25rem;
-}
-.right-bottom {
-  bottom: 20rem;
-  right: 25rem;
+  bottom: 30%;
+  left: 15%;
 }
 
+.right-top {
+  top: 30%;
+  right: 15%;
+}
+
+.right-bottom {
+  bottom: 30%;
+  right: 15%;
+}
 
 .bottom-left {
-  bottom: 8rem;
-  left: 50rem;
+  bottom: 10%;
+  left: 30%;
 }
 
 .bottom-right {
-  bottom: 8rem;
-  right: 50rem;
+  bottom: 10%;
+  right: 30%;
 }
 
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #e6aedf;
+}
+
+@media (max-width: 1024px) {
+  .avatar-img {
+    width: 80px;
+    height: 80px;
+  }
+  .player-number-box {
+    width: 28px;
+    font-size: 12px;
+  }
+  .amount-box {
+    padding: 4px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .avatar-img {
+    width: 60px;
+    height: 60px;
+  }
+  .player-number-box {
+    width: 24px;
+    font-size: 11px;
+  }
+  .amount-box {
+    padding: 2px 15px;
+  }
+}

@@ -1,11 +1,11 @@
 .menu-icons {
-    position: absolute;
-    top: 6rem;
-    right: 10rem;
-    display: flex;
-    gap: 0.5rem;
-    z-index: 10;
-  }
+  position: absolute;
+  top: 6vh;
+  right: 5vw;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
   
   .icon-box {
     background: rgba(230, 202, 238, 0.2);
@@ -20,3 +20,10 @@
   .icon-box:hover {
     background: rgba(255, 255, 255, 0.4);
   }
+  @media (max-width: 768px) {
+    .menu-icons {
+        top: 4vh;
+        right: 2vw;
+        gap: 0.3rem;
+    }
+}
