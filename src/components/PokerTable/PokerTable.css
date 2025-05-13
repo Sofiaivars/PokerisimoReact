@@ -1,23 +1,22 @@
 .poker-table-container {
   position: relative;
   background: linear-gradient(to bottom right, rgba(41, 3, 44, 0.6), rgba(221, 165, 233, 0.8)); 
-  padding: 4rem;
   border-radius: 5rem;
   width: 85vw;      
-  height: 740px;
+  height: 840px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; 
   margin: 0 auto;
-  margin-top: 1vh;
+  margin-top: 2vh;
   z-index: 1;
   aspect-ratio: 2 / 1;
+  outline: 2px solid rgb(173, 132, 171);
 }
   
 .poker-table {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);  
   background: rgba(48, 26, 53, 0.4);
   border: 45px solid #b75edaa4;
   border-radius: 50rem;
@@ -26,21 +25,15 @@
   height: 75%;
   max-height: 600px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  outline: 2px solid rgb(216, 148, 210);
   position: relative; 
-  z-index: 1;
+  z-index: -1;
   box-sizing: border-box;
   overflow: hidden;
   margin-bottom: 120px;
 }
 
-.poker-table-container {
-  outline: 2px solid rgb(165, 54, 159);
-}
 
-.poker-table {
-  outline: 2px solid rgb(216, 148, 210);
-  
-}
 
 @media (max-width: 1024px) {
   .poker-table-container {
@@ -74,10 +67,36 @@
   .bottom-row {
     flex-direction: column;
     align-items: center;
+    z-index: 10;
   }
 
   .contador-container {
     bottom: 5rem;
     font-size: 18px;
   }
+
+}
+
+.turn-container{
+  position: absolute;
+  bottom: 55px;
+  left: 76%;  
+  padding: 10px 20px;  
+  color: white;
+  z-index: 10;
+  
+}
+.player-cards-container {
+  position: absolute;
+  display: flex;
+  z-index: 5;
+  padding: 0;  
+  transform: translate(-50%, -50%);
+  gap: 2px; 
+}
+
+.player-cards-container img {
+  width: 70px;
+  height: auto;
+  display: block;
 }

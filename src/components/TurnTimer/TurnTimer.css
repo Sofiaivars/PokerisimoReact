@@ -1,0 +1,38 @@
+.turn-timer {
+  text-align: center;
+  padding: 20px;
+  background-color: #533852a6;
+  border-radius: 75px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(39, 35, 35, 0.842);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 75%;
+}
+
+.player-turn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.time-left {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.action-button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #700e50d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #8b639b;
+}

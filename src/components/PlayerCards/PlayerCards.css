@@ -1,31 +1,17 @@
 .player-cards-container {
-    position: absolute;
-    display: flex;
-    gap: 0.5rem;
-    cursor: pointer;
-    flex-direction: column;
-    align-items: center;
-  }
+  position: relative; 
+  display: flex;
+  gap: 0;  
+  z-index: 5;
+}
+
+.player-cards-container img {
+  position: absolute; 
+  width: 60px;
+  height: auto;
+  display: block;
   
-  .card {
-    width: 60px;
-    height: 90px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .player-number {
-    margin-top: 5px;
-    color: white;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  
+}
+.player-number {
+  display: none;
+}
