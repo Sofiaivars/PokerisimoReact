@@ -30,7 +30,7 @@ const PokerTable = () => {
             top="12%"
             left="25%"
           />
-          <PlayerAvatar playerNumber={2} amount={3000} top="2%" left="47%" />
+          <PlayerAvatar playerNumber={2} amount={3000} top="0%" left="47%" />
           <PlayerCards
             playerNumber={2}
             cards={backCards}
